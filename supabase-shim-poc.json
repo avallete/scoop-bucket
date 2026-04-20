@@ -1,0 +1,28 @@
+{
+    "version": "0.0.1",
+    "description": "Supabase CLI",
+    "homepage": "https://supabase.com",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/avallete/supabase-cli-release-poc/releases/download/v0.0.1/supabase_0.0.1_windows_amd64.zip",
+            "hash": "29f9562a7f787a8c3d7295a8f26e96cde7c56a1846226ccbaf2bb8f620ce2729",
+            "bin": [
+                [
+                    "supabase.exe",
+                    "supabase-shim-poc"
+                ]
+            ]
+        }
+    },
+    "checkver": {
+        "github": "https://github.com/avallete/supabase-cli-release-poc"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/avallete/supabase-cli-release-poc/releases/download/v$version/supabase_$version_windows_amd64.zip"
+            }
+        }
+    }
+}
